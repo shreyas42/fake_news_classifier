@@ -1,0 +1,1 @@
+df <- read.csv("~/fifth_semester/data_analytics/fake_news_classifier/finalData.csv")
