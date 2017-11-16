@@ -1,0 +1,5 @@
+data
+.vscode
+.spyderworkspace
+virt_env
+log.txt
