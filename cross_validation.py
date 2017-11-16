@@ -176,7 +176,7 @@ class cross_validation(object):
         # plot f1 score learning curve
         fig.add_subplot(221)   # left
         plt.title(self.title + "\n" + "F1-Score vs. Number of Training Samples")
-        plt.plot(self.training_size, self.f1_mean_train, label="Train")
+        #plt.plot(self.training_size, self.f1_mean_train, label="Train")
         plt.plot(self.training_size, self.f1_mean_test, label="Test");
         plt.xlabel("Number of Training Samples")
         plt.ylabel("F1-Score")
@@ -185,7 +185,7 @@ class cross_validation(object):
         # plot accuracy learning curve
         fig.add_subplot(222)   # right 
         plt.title(self.title + "\n" + "Accuracy vs. Number of Training Samples")
-        plt.plot(self.training_size, self.acc_mean_train, label="Train")
+        #plt.plot(self.training_size, self.acc_mean_train, label="Train")
         plt.plot(self.training_size, self.acc_mean_test, label="Test");
         plt.xlabel("Number of Training Samples")
         plt.ylabel("Accuracy")
@@ -194,7 +194,7 @@ class cross_validation(object):
         # plot precision learning curve
         fig.add_subplot(223)   # left
         plt.title(self.title + "\n" + "Precision Score vs. Number of Training Samples")
-        plt.plot(self.training_size, self.pre_mean_train, label="Train")
+        #plt.plot(self.training_size, self.pre_mean_train, label="Train")
         plt.plot(self.training_size, self.pre_mean_test, label="Test");
         plt.xlabel("Number of Training Samples")
         plt.ylabel("Precision")
@@ -204,8 +204,9 @@ class cross_validation(object):
         # plot accuracy learning curve
         fig.add_subplot(224)   # right 
         plt.title(self.title + "\n" + "Recall vs. Number of Training Samples")
-        plt.plot(self.training_size, self.rec_mean_train, label="Train")
+        #plt.plot(self.training_size, self.rec_mean_train, label="Train")
         plt.plot(self.training_size, self.rec_mean_test, label="Test");
         plt.xlabel("Number of Training Samples")
         plt.ylabel("Recall")
-        plt.legend(loc=4);
+        plt.legend(loc=4)
+        plt.show()
