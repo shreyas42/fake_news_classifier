@@ -9,3 +9,8 @@ Ravi Shreyas Anupindi 01FB15ECS234
 These instructions will help you in setting up the python environment for running the models and validating results.
 
 ### Prerequisites
+
+
+### Dataset
+Link to the dataset: https://drive.google.com/open?id=1Q3ZO3trNfBg0uSlkz73V6XfSRNx7hO7k
+Make sure to create a folder called data inside the project folder and add the dataset inside this folder.
