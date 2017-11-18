@@ -5,6 +5,9 @@ Hiranmaya Gundu 01FB15ECS127
 Rahul Mayuranath 01FB15ECS225  
 Ravi Shreyas Anupindi 01FB15ECS234  
 
+## Credits
+Thanks to https://github.com/genyunus/Detecting_Fake_News/ for the cross_validation script.
+
 ## Words of Advice:
 The models take a fair amount of time to train and test, especially Random Forests and LSTM. This is probably owing to the K-folds cross validation taking a fair amount of time.  
 Additionally, to run the models against the entire dataset(30,000 articles) you will require at least 16GB of RAM. To work around this,
@@ -19,7 +22,8 @@ df = df.sample(10000)
 ```
 
 ### Dataset
-Link to the dataset: https://drive.google.com/open?id=1Q3ZO3trNfBg0uSlkz73V6XfSRNx7hO7k  
+Link to the dataset: https://drive.google.com/open?id=1Q3ZO3trNfBg0uSlkz73V6XfSRNx7hO7k 
+Create a folder called data inside the main directory and add the csv file there.
 
 ## Getting started
 These instructions will help you in setting up the python environment for running the models and validating results.
