@@ -43,4 +43,12 @@ The package also requires additional nltk packages, including the corpus of stop
 import nltk
 nltk.download()
 ```
-from inside the python shell.
+from inside the python shell.  
+Generating the word clouds:
+```python
+python wcloud.py
+```
+Running the models:
+```python
+python main.py
+```
