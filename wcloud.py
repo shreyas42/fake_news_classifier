@@ -34,3 +34,34 @@ plt.title('Word cloud for articles labelled as fake')
 plt.imshow(fakecloud)
 plt.axis("off")
 plt.show()
+
+file = ' '.join(dff.title.values)# Use this to read file content as a stream:
+werd = list()
+for r in file.split():
+    #print(r)
+    if not r in stop_words: #removing all stop words to build the word cloud
+        werd.append(r)
+        
+fakecloud = wordcloud.WordCloud(width = 1000, height = 500).generate(' '.join(werd))
+
+plt.figure(figsize=(15,8))
+plt.title('Word cloud for headlines labelled as fake')
+plt.imshow(fakecloud)
+plt.axis("off")
+plt.show()
+
+
+file = ' '.join(dft.title.values)# Use this to read file content as a stream:
+werd = list()
+for r in file.split():
+    #print(r)
+    if not r in stop_words: #removing all stop words to build the word cloud
+        werd.append(r)
+        
+fakecloud = wordcloud.WordCloud(width = 1000, height = 500).generate(' '.join(werd))
+
+plt.figure(figsize=(15,8))
+plt.title('Word cloud for headlines labelled as real')
+plt.imshow(fakecloud)
+plt.axis("off")
+plt.show()
